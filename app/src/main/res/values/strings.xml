@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Unplug.me</string>
+    <string name="anthony_diaz">Anthony Diaz</string>
+    <string name="miami_fl">Miami, FL</string>
+    <string name="todo">TODO</string>
+    <string name="age">Age</string>
+    <string name="work_hours_per_day">Work Hours Per Day</string>
+    <string name="work_start_time">Work start time</string>
+    <string name="average_break_time_mins">Average break time (mins)</string>
+    <string name="continuous_work_hours_without_break">Continuous work hours without break</string>
+    <string name="save">Save</string>
+    <string name="info">Info</string>
+    <string name="scheduler">Scheduler</string>
+    <string name="profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_ergonomics">ErgonomicsActivity</string>
+    <string name="title_activity_bottem_navigation_items">BottemNavigationItemsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_test_bottom">TestBottomActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="ergonomics">Ergonomics</string>
+    <string name="ailments">Ailments</string>
+    <string name="tips_and_tricks">Tips and Tricks</string>
+    <string name="msg_no_category">No Category</string>
+</resources>

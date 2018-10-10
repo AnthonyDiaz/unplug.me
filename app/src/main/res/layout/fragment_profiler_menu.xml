@@ -1,0 +1,177 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unplugme.view.Activity.ProfilerMenuFragment"
+    android:isScrollContainer="true"
+    android:background="@color/profilebackground"
+    android:id="@+id/profiler_fragment_menu"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/profilebackground">
+
+    <RelativeLayout
+        android:id="@+id/usrprof_img_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/img_usr_pro_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_user"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/txt_usr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img_usr_pro_pic"
+            android:text="@string/anthony_diaz"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/txt_usr_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_usr_name"
+            android:text="@string/miami_fl"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/usrprof_img_name">
+
+        <EditText
+            android:id="@+id/txt_usr_age"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usr_wrk_hrs_perday"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/txt_usr_age"
+            android:layout_toRightOf="@+id/txt_usr_age"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/work_hours_per_day"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/usr_days_wrk"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/usr_wrk_hrs_perday"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/usr_time_spnt"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/usr_days_wrk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/usr_wrk_strt_time"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/usr_time_spnt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/work_start_time"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usr_avg_brk_time"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/usr_wrk_strt_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/average_break_time_mins"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/usr_cont_wrk_hrs"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/usr_avg_brk_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="@string/continuous_work_hours_without_break"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/menubarbackground"
+            android:layout_below="@+id/usr_cont_wrk_hrs"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</ScrollView>
+
+</FrameLayout>

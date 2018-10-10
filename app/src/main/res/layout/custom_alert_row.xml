@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/lblAlertTitle"
+        android:layout_width="552dp"
+        android:layout_height="36dp"
+        android:layout_weight="27"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnEditAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="38"
+        android:background="@android:drawable/ic_menu_edit"
+        android:onClick="onEditButtonSelected"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="35"
+        android:text="ToggleButton" />
+
+
+</LinearLayout>

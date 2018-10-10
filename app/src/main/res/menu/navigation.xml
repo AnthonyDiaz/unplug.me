@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/info_icon"
+        android:icon="@drawable/more_details_48_gray"
+        android:title="@string/info" />
+
+    <item
+        android:id="@+id/scheduler_icon"
+        android:icon="@drawable/schedule_48_gray"
+        android:title="@string/scheduler" />
+
+    <item
+        android:id="@+id/profiler_icon"
+        android:icon="@drawable/contract_job_white"
+        android:title="@string/profile" />
+
+</menu>
